@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="th">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Surangkana S. | พอร์ตโฟลิโอ ครุศาสตร์อุตสาหกรรมและเทคโนโลยี</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@300;400;500;600&amp;family=Noto+Sans+Thai:wght@300;400;500;600;700&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "surface-container-low": "#F8FAFC",
+            "on-primary": "#FFFFFF",
+            "secondary-fixed-dim": "#CBD5E1",
+            "surface-variant": "#E2E8F0",
+            "surface-tint": "#0F172A",
+            "on-secondary-fixed-variant": "#334155",
+            "inverse-on-surface": "#F8FAFC",
+            "inverse-primary": "#F1F5F9",
+            "on-primary-fixed": "#020617",
+            "surface-bright": "#FFFFFF",
+            "on-surface": "#0F172A",
+            "tertiary": "#6366F1",
+            "primary-container": "#F1F5F9",
+            "tertiary-fixed": "#A5B4FC",
+            "secondary-dim": "#475569",
+            "secondary": "#64748B",
+            "surface-container-high": "#E2E8F0",
+            "on-primary-container": "#0F172A",
+            "primary-fixed": "#334155",
+            "on-tertiary": "#FFFFFF",
+            "on-error": "#FFFFFF",
+            "inverse-surface": "#0F172A",
+            "surface-container-highest": "#CBD5E1",
+            "on-tertiary-fixed": "#1E1B4B",
+            "error-container": "#FEE2E2",
+            "on-background": "#0F172A",
+            "secondary-container": "#E2E8F0",
+            "primary-fixed-dim": "#1E293B",
+            "on-primary-fixed-variant": "#F8FAFC",
+            "outline-variant": "#CBD5E1",
+            "tertiary-dim": "#4F46E5",
+            "tertiary-container": "#E0E7FF",
+            "primary-dim": "#1E293B",
+            "on-error-container": "#7F1D1D",
+            "background": "#F8FAFC",
+            "surface-container-lowest": "#FFFFFF",
+            "error": "#EF4444",
+            "on-tertiary-container": "#312E81",
+            "surface-dim": "#E2E8F0",
+            "surface": "#FFFFFF",
+            "primary": "#0F172A",
+            "error-dim": "#DC2626",
+            "on-surface-variant": "#475569",
+            "on-tertiary-fixed-variant": "#3730A3",
+            "on-secondary-fixed": "#0F172A",
+            "surface-container": "#F1F5F9",
+            "on-secondary": "#FFFFFF",
+            "outline": "#94A3B8",
+            "on-secondary-container": "#1E293B",
+            "tertiary-fixed-dim": "#818CF8",
+            "secondary-fixed": "#E2E8F0"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          "fontFamily": {
+            "headline": ["Noto Sans Thai", "Manrope"],
+            "body": ["Noto Sans Thai", "Inter"],
+            "label": ["Noto Sans Thai", "Inter"]
+          }
+        },
+      },
+    }
+  </script>
+  <style>
+    body {
+      font-family: 'Noto Sans Thai', 'Inter', sans-serif;
+    }
+
+    h1,
+    h2,
+    h3,
+    .font-headline {
+      font-family: 'Noto Sans Thai', 'Manrope', sans-serif;
+    }
+
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      vertical-align: middle;
+    }
+
+    .tonal-shift {
+      transition: background-color 0.3s ease;
+    }
+
+    .no-line {
+      border: none !important;
+    }
+  </style>
+</head>
+
+<body class="bg-slate-50 text-on-surface selection:bg-tertiary/20 relative">
+  <!-- Glowing Ambient Mesh Background -->
+  <div class="fixed inset-0 overflow-hidden pointer-events-none -z-10">
+    <div class="absolute top-[-10%] right-[-5%] w-[45vw] h-[45vw] bg-indigo-500/15 rounded-full blur-[120px]"></div>
+    <div class="absolute top-[30%] left-[-10%] w-[40vw] h-[40vw] bg-blue-500/10 rounded-full blur-[120px]"></div>
+    <div class="absolute bottom-[-10%] left-[20%] w-[50vw] h-[50vw] bg-violet-500/15 rounded-full blur-[120px]"></div>
+  </div>
+  <!-- TopAppBar -->
+  <header class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-md">
+    <nav class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+      <div class="text-xl font-bold tracking-tighter text-zinc-900">Surangkana S.</div>
+      <!-- Desktop Nav -->
+      <div class="hidden md:flex items-center gap-8 font-semibold tracking-tight">
+        <a class="text-zinc-900 border-b-2 border-zinc-500 pb-1" href="#about">เกี่ยวกับฉัน</a>
+        <a class="text-zinc-500 hover:text-zinc-800 transition-colors" href="#experience">ประสบการณ์</a>
+        <a class="text-zinc-500 hover:text-zinc-800 transition-colors" href="#education">การศึกษา</a>
+        <a class="text-zinc-500 hover:text-zinc-800 transition-colors" href="#skills">ทักษะ</a>
+      </div>
+      <a href="index.html"
+        class="flex items-center gap-2 text-zinc-800 font-semibold hover:text-tertiary transition-colors">
+        <span class="material-symbols-outlined" data-icon="translate">translate</span>
+        <span class="text-sm">Switch to English (EN)</span>
+      </a>
+    </nav>
+  </header>
+  <main class="pt-24">
+    <!-- Hero Section -->
+    <section class="max-w-7xl mx-auto px-8 py-20 lg:py-32 grid md:grid-cols-12 gap-12 items-center">
+      <div class="md:col-span-7">
+        <span
+          class="inline-block px-4 py-1.5 bg-surface-container-high rounded-full text-tertiary font-medium text-sm mb-6">พร้อมเปิดรับโอกาสใหม่ๆ</span>
+        <h1
+          class="text-5xl lg:text-7xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-br from-primary to-tertiary leading-tight mb-6">
+          นักศึกษาครุศาสตร์อุตสาหกรรม <br /> และเทคโนโลยี
+        </h1>
+        <p class="text-xl text-on-surface-variant max-w-xl leading-relaxed mb-10">
+          มีความเชี่ยวชาญด้านงานเอกสารทางเทคนิค การประสานงานวิชาการ และกระบวนการทดสอบในอุตสาหกรรม
+          ปัจจุบันกำลังศึกษาในระดับปริญญาตรีที่มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี (KMUTT)
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a class="bg-primary text-on-primary px-8 py-4 rounded-lg font-semibold hover:bg-primary-dim transition-all active:scale-95"
+            href="https://facebook.com/surangkana.koranee">ติดต่อฉัน</a>
+          <a class="border border-outline-variant text-primary px-8 py-4 rounded-lg font-semibold hover:bg-surface-container-low transition-all"
+            href="Surangkana.pdf" target="_blank">ดาวน์โหลด CV</a>
+        </div>
+      </div>
+      <div class="md:col-span-5 relative">
+        <div class="aspect-[4/5] rounded-2xl overflow-hidden bg-surface-container-low shadow-xl">
+          <img class="w-full h-full object-cover"
+            data-alt="Professional studio portrait of a young woman with a friendly expression in professional attire, soft neutral background, bright editorial lighting"
+            src="/Profile.png" />
+        </div>
+        <!-- Decorative element -->
+        <div class="absolute -bottom-6 -left-6 w-32 h-32 bg-tertiary/10 rounded-full blur-3xl"></div>
+      </div>
+    </section>
+    <!-- About Me (Asymmetric Layout) -->
+    <section class="bg-surface-container-low py-24" id="about">
+      <div class="max-w-7xl mx-auto px-8 grid md:grid-cols-2 gap-16 items-start">
+        <div>
+          <h2 class="text-sm font-bold tracking-widest text-tertiary uppercase mb-4">เกี่ยวกับฉัน</h2>
+          <h3 class="text-4xl font-bold text-primary mb-6">หลงใหลในความแม่นยำและการศึกษาทางเทคนิค</h3>
+        </div>
+        <div class="space-y-6 text-on-surface-variant text-lg leading-relaxed">
+          <p>
+            ฉันเป็นนักศึกษาที่มุ่งเน้นด้านครุศาสตร์อุตสาหกรรมและเทคโนโลยี
+            เส้นทางการเรียนของฉันได้รับแรงผลักดันจากความหลงใหลในวิธีการสื่อสารและจัดทำเอกสารกระบวนการทางเทคนิค
+          </p>
+          <p>
+            ด้วยประสบการณ์ที่ครอบคลุมตั้งแต่งานผู้ช่วยวิชาการไปจนถึงการทดสอบทางไฟฟ้าในโรงงานอุตสาหกรรม
+            ฉันมีความสามารถที่ผสมผสานระหว่างความละเอียดรอบคอบแบบงานธุรการและความเข้าใจในงานช่าง
+            ฉันพร้อมเติบโตในสภาพแวดล้อมที่ต้องการความใส่ใจในรายละเอียดและการประสานงานเชิงรุก
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Experience & Education (Bento Grid Style) -->
+    <section class="py-24 max-w-7xl mx-auto px-8" id="experience">
+      <h2 class="text-sm font-bold tracking-widest text-tertiary uppercase mb-12">ประสบการณ์และความเชี่ยวชาญ</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Main Experience Card 1 -->
+        <div
+          class="md:col-span-2 bg-surface-container-lowest p-8 rounded-2xl border border-transparent hover:border-outline-variant/15 transition-all">
+          <div class="flex justify-between items-start mb-6">
+            <div>
+              <span
+                class="text-xs font-bold text-on-surface-variant/60 uppercase tracking-tighter">ตำแหน่งปัจจุบัน</span>
+              <h4 class="text-2xl font-bold text-primary">ผู้ช่วยนักศึกษา</h4>
+              <p class="text-tertiary font-semibold">มจธ. (KMUTT)</p>
+            </div>
+            <span class="material-symbols-outlined text-tertiary-fixed text-4xl"
+              data-icon="description">description</span>
+          </div>
+          <ul class="space-y-3 text-on-surface-variant">
+            <li class="flex gap-3"><span class="material-symbols-outlined text-sm mt-1"
+                data-icon="check_circle">check_circle</span> จัดรูปแบบและออกแบบเลย์เอาต์เอกสาร</li>
+            <li class="flex gap-3"><span class="material-symbols-outlined text-sm mt-1"
+                data-icon="check_circle">check_circle</span> ออกแบบแบบฟอร์มวิชาการและธุรการ</li>
+            <li class="flex gap-3"><span class="material-symbols-outlined text-sm mt-1"
+                data-icon="check_circle">check_circle</span> ตรวจสอบคุณภาพเอกสารวิชาการ</li>
+            <li class="flex gap-3"><span class="material-symbols-outlined text-sm mt-1"
+                data-icon="check_circle">check_circle</span> ประสานงานระหว่างแผนก</li>
+          </ul>
+        </div>
+        <!-- Education Sidebar -->
+        <div class="bg-primary text-on-primary p-8 rounded-2xl flex flex-col justify-between" id="education">
+          <div>
+            <h4 class="text-xl font-bold mb-6">การศึกษา</h4>
+            <div class="space-y-6">
+              <div>
+                <p class="text-sm text-on-primary/60 font-bold uppercase tracking-widest">ปริญญาตรี</p>
+                <p class="font-bold">มจธ. (KMUTT)</p>
+                <p class="text-sm text-on-primary/80">ครุศาสตร์อุตสาหกรรมและเทคโนโลยี</p>
+              </div>
+              <div>
+                <p class="text-sm text-on-primary/60 font-bold uppercase tracking-widest">มัธยมศึกษา</p>
+                <p class="font-bold">โรงเรียนมัธยมในท้องถิ่น</p>
+                <p class="text-sm text-on-primary/80">สายสามัญ</p>
+              </div>
+            </div>
+          </div>
+          <span class="material-symbols-outlined text-6xl opacity-20 mt-8" data-icon="school">school</span>
+        </div>
+        <!-- Experience Card 2 -->
+        <div class="md:col-span-3 grid md:grid-cols-3 gap-6">
+          <div class="md:col-span-1 bg-surface-container-high p-8 rounded-2xl flex flex-col justify-center">
+            <span class="material-symbols-outlined text-4xl text-primary mb-4" data-icon="bolt">bolt</span>
+            <h4 class="text-xl font-bold text-primary">การทดสอบทางเทคนิค</h4>
+            <p class="text-on-surface-variant mt-2 text-sm leading-relaxed">
+              มีประสบการณ์ในกระบวนการทดสอบทางไฟฟ้าที่บริษัท ถิรไทย จำกัด (มหาชน)</p>
+          </div>
+          <div
+            class="md:col-span-2 bg-surface-container-lowest p-8 rounded-2xl border border-transparent hover:border-outline-variant/15 transition-all">
+            <div class="flex justify-between items-start mb-4">
+              <div>
+                <h4 class="text-2xl font-bold text-primary">บริษัท ถิรไทย จำกัด (มหาชน)</h4>
+                <p class="text-tertiary font-semibold">แผนกทดสอบไฟฟ้าและฝ่ายขาย/การตลาด</p>
+              </div>
+              <span
+                class="text-sm font-medium text-on-surface-variant bg-surface-container-high px-3 py-1 rounded">นักศึกษาฝึกงาน</span>
+            </div>
+            <p class="text-on-surface-variant mb-4">
+              ประสบการณ์แบบควบสองบทบาทที่ผสมผสานทั้งการปฏิบัติงานด้านเทคนิคและการดูแลข้อมูลลูกค้า</p>
+            <div class="grid grid-cols-2 gap-4">
+              <div class="bg-surface-container-low p-4 rounded-xl">
+                <p class="text-xs font-bold uppercase text-tertiary mb-1">การทดสอบ</p>
+                <p class="text-sm">ขั้นตอนการทดสอบไฟฟ้าและบันทึกข้อมูล</p>
+              </div>
+              <div class="bg-surface-container-low p-4 rounded-xl">
+                <p class="text-xs font-bold uppercase text-tertiary mb-1">เชิงพาณิชย์</p>
+                <p class="text-sm">ลงพื้นที่พบปะลูกค้าและจัดทำเอกสารการขาย</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Skills Section (Tonal Blocks) -->
+    <section class="bg-surface py-24" id="skills">
+      <div class="max-w-7xl mx-auto px-8">
+        <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+          <div>
+            <h2 class="text-sm font-bold tracking-widest text-tertiary uppercase mb-4">ทักษะความสามารถ</h2>
+            <h3 class="text-4xl font-bold text-primary">เครื่องมือที่ถนัด</h3>
+          </div>
+          <div class="flex gap-4">
+            <div class="px-6 py-2 bg-surface-container-high rounded-full text-sm font-medium">ภาษาแม่: ไทย</div>
+            <div class="px-6 py-2 bg-tertiary/10 text-tertiary rounded-full text-sm font-medium">ระดับกลาง: อังกฤษ</div>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <!-- Software -->
+          <div>
+            <p class="text-lg font-bold text-primary mb-6 flex items-center gap-2">
+              <span class="material-symbols-outlined" data-icon="computer">computer</span> โปรแกรมทางเทคนิค
+            </p>
+            <div class="grid grid-cols-2 gap-4">
+              <div
+                class="p-4 bg-surface-container-lowest border border-outline-variant/10 rounded-xl hover:shadow-md transition-all">
+                <p class="font-bold">Canva</p>
+                <p class="text-xs text-on-surface-variant">การออกแบบและภาพนิ่ง</p>
+              </div>
+              <div
+                class="p-4 bg-surface-container-lowest border border-outline-variant/10 rounded-xl hover:shadow-md transition-all">
+                <p class="font-bold">AutoCAD</p>
+                <p class="text-xs text-on-surface-variant">เขียนแบบทางเทคนิค</p>
+              </div>
+              <div
+                class="p-4 bg-surface-container-lowest border border-outline-variant/10 rounded-xl hover:shadow-md transition-all">
+                <p class="font-bold">MS Word</p>
+                <p class="text-xs text-on-surface-variant">งานเอกสาร</p>
+              </div>
+              <div
+                class="p-4 bg-surface-container-lowest border border-outline-variant/10 rounded-xl hover:shadow-md transition-all">
+                <p class="font-bold">MS Excel</p>
+                <p class="text-xs text-on-surface-variant">วิเคราะห์ข้อมูล</p>
+              </div>
+            </div>
+          </div>
+          <!-- Professional -->
+          <div>
+            <p class="text-lg font-bold text-primary mb-6 flex items-center gap-2">
+              <span class="material-symbols-outlined" data-icon="star">star</span> จุดแข็งในการทำงาน
+            </p>
+            <div class="flex flex-wrap gap-3">
+              <span
+                class="px-5 py-3 bg-surface-container-low rounded-xl text-primary font-semibold text-sm">ใส่ใจรายละเอียด</span>
+              <span
+                class="px-5 py-3 bg-surface-container-low rounded-xl text-primary font-semibold text-sm">มีความรับผิดชอบ</span>
+              <span
+                class="px-5 py-3 bg-surface-container-low rounded-xl text-primary font-semibold text-sm">การจัดการเอกสาร</span>
+              <span
+                class="px-5 py-3 bg-surface-container-low rounded-xl text-primary font-semibold text-sm">การประสานงาน</span>
+              <span
+                class="px-5 py-3 bg-surface-container-low rounded-xl text-primary font-semibold text-sm">เรียนรู้เร็ว</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section -->
+    <section class="max-w-7xl mx-auto px-8 py-24">
+      <div class="bg-inverse-surface text-inverse-on-surface rounded-3xl p-12 lg:p-20 relative overflow-hidden">
+        <div class="relative z-10 grid lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <h2 class="text-4xl lg:text-5xl font-extrabold text-white mb-6">
+              มาร่วมงานและเชื่อมต่อกันสำหรับโปรเจกต์ในอนาคต</h2>
+            <p class="text-zinc-400 text-lg mb-10 max-w-md">ฉันพร้อมเปิดรับและพูดคุยถึงโอกาสใหม่ๆ
+              ในสายงานครุศาสตร์อุตสาหกรรมและงานเอกสารเทคนิคเสมอ</p>
+            <div class="space-y-6">
+              <div class="flex items-center gap-4">
+                <div class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center">
+                  <span class="material-symbols-outlined text-white" data-icon="mail">mail</span>
+                </div>
+                <div>
+                  <p class="text-xs uppercase tracking-widest text-zinc-500 font-bold">อีเมล</p>
+                  <p class="text-white font-medium">surangkana4479@gmail.com</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-4">
+                <div class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center">
+                  <span class="material-symbols-outlined text-white" data-icon="phone">phone</span>
+                </div>
+                <div>
+                  <p class="text-xs uppercase tracking-widest text-zinc-500 font-bold">เบอร์โทรศัพท์</p>
+                  <p class="text-white font-medium">096-658-2261</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-4">
+                <div class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center">
+                  <span class="material-symbols-outlined text-white" data-icon="location_on">location_on</span>
+                </div>
+                <div>
+                  <p class="text-xs uppercase tracking-widest text-zinc-500 font-bold">ที่อยู่</p>
+                  <p class="text-white font-medium">กรุงเทพมหานคร, ประเทศไทย</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col gap-4">
+            <a class="flex items-center gap-6 p-6 bg-white/5 hover:bg-white/10 rounded-2xl border border-white/10 transition-all hover:scale-[1.02] active:scale-95 group"
+              href="https://www.facebook.com/surangkana.koranee" target="_blank">
+              <div
+                class="w-14 h-14 rounded-full bg-[#1877F2]/20 flex items-center justify-center group-hover:bg-[#1877F2]/30 transition-colors">
+                <svg aria-hidden="true" class="w-7 h-7 text-[#1877F2]" fill="currentColor" viewBox="0 0 24 24">
+                  <path clip-rule="evenodd"
+                    d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                    fill-rule="evenodd"></path>
+                </svg>
+              </div>
+              <div>
+                <p class="text-white font-bold text-lg group-hover:text-[#1877F2] transition-colors">Facebook</p>
+                <p class="text-zinc-400 text-sm">ติดตามและพูดคุยกับฉัน</p>
+              </div>
+            </a>
+            <a class="flex items-center gap-6 p-6 bg-white/5 hover:bg-white/10 rounded-2xl border border-white/10 transition-all hover:scale-[1.02] active:scale-95 group"
+              href="mailto:surangkana4479@gmail.com">
+              <div
+                class="w-14 h-14 rounded-full bg-white/10 flex items-center justify-center group-hover:bg-white/20 transition-colors">
+                <span class="material-symbols-outlined text-white text-3xl">mail</span>
+              </div>
+              <div>
+                <p class="text-white font-bold text-lg group-hover:text-tertiary-fixed transition-colors">อีเมล</p>
+                <p class="text-zinc-400 text-sm">surangkana4479@gmail.com</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- Abstract BG Pattern -->
+        <div class="absolute top-0 right-0 w-96 h-96 bg-tertiary/20 rounded-full blur-[120px] -mr-48 -mt-48"></div>
+      </div>
+    </section>
+  </main>
+  <!-- Footer -->
+  <footer class="bg-zinc-50 py-12 border-t border-zinc-100">
+    <div
+      class="flex flex-col md:flex-row justify-between items-center px-8 max-w-7xl mx-auto gap-4 font-['Inter'] text-sm tracking-wide">
+      <div class="text-zinc-600">© 2024 Surangkana S. สงวนลิขสิทธิ์</div>
+      <div class="flex gap-8">
+        <a class="text-zinc-500 hover:text-blue-600 transition-colors" href="#">Thank you</a>
+        <a class="text-zinc-500 hover:text-blue-600 transition-colors" href="mailto:surangkana4479@gmail.com">อีเมล</a>
+        <a class="text-zinc-500 hover:text-blue-600 transition-colors" href="Surangkana.pdf" target="_blank">ดาวน์โหลด
+          CV</a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
